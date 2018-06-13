@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Moogle Images</title>
+        <meta name="description" content="Moogle Image Search">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+       
+        <link rel="icon" href="./favicon.ico"> 
+
+        <link rel="stylesheet" href="http://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css">
+        <link rel="stylesheet" href="http://yui.yahooapis.com/3.18.1/build/cssfonts/cssfonts-min.css">
+        <link rel="stylesheet" href="http://yui.yahooapis.com/3.18.1/build/cssbutton/cssbutton.css">
+        
+        <style>
+        body{
+            text-align: center;
+        }
+        form {
+            margin: 25px auto 0 auto;
+            width: 80%;
+        }
+        input[type=text], textarea {
+            margin: 0 auto;
+            width: 500px;
+            -webkit-transition: all 0.30s ease-in-out;
+            -moz-transition: all 0.30s ease-in-out;
+            -ms-transition: all 0.30s ease-in-out;
+            -o-transition: all 0.30s ease-in-out;
+            outline: none;
+            padding: 3px 0px 3px 3px;
+            margin: 5px 1px 3px 0px;
+            border: 1px solid #DDDDDD;
+            line-height: 26px;
+            font-size:123.1%;
+        }
+        input[type=text]:focus, textarea:focus {
+            box-shadow: 0 0 5px rgba(0, 102, 204, 1);
+            padding: 3px 0px 3px 3px;
+            margin: 5px 1px 3px 0px;
+            border: 1px solid rgba(0, 102, 204, 1);
+        }
+        input[type=submit] {
+            line-height: 23px;
+            font-size:123.1%;
+        }
+        #logo {
+            display: block; 
+            margin: 14% auto 0 auto;
+        }
+        #logo2 {
+            color: #2a7cdf;
+            font-weight: bold;
+            font-size:123.1%;
+        }
+        #mode {
+            position: absolute;
+            right: 3%;  
+            top: 2em;
+            color: #797979;
+        }
+        #mode a {
+            color: #797979;
+            text-decoration: none;
+        }
+        #mode a:hover {
+            text-decoration: underline;
+        }
+        </style>
+    </head>
+
+    <body onload="document.getElementById('q').focus();">
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <div id=mode>
+            <a href=./index.html>Web</a> &nbsp; <b>Images</b> &nbsp; <a href=https://mail.bfplp.com/>Mail</a>
+        </div>
+
+        <div>
+            <img id=logo src=./logo.jpg width=400>
+            <div id=logo2>Images</div>
+            <form action=http://images.google.com/images method=get target=content>
+                <input type=text name=q id=q>
+                <input type=submit class='yui3-button' value="Image Search" style=margin-left:10px;>
+            </form>
+        </div>
+    
+    </body>
+</html>
